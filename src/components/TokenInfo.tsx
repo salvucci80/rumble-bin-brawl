@@ -35,7 +35,7 @@ const TokenInfo = () => {
       </div>
       
       <div className="flex gap-4 justify-center">
-        <Button variant="game-blue" size="lg" className="flex items-center gap-2">
+        <Button variant="game-blue" size="lg" className="flex items-center gap-2 text-white font-black">
           <Zap className="w-5 h-5" />
           UPGRADE RACCOON
         </Button>

@@ -6,10 +6,10 @@ const GameModes = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
       <div className="bg-gradient-to-br from-game-orange to-game-yellow border-4 border-game-orange-dark rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
         <div className="bg-black/20 p-4 rounded-xl mb-4 mx-auto w-fit">
-          <Swords className="w-8 h-8 text-black" />
+          <Swords className="w-8 h-8 text-white" />
         </div>
-        <h3 className="text-xl font-black text-black mb-2">QUICK BRAWL</h3>
-        <p className="text-black/80 font-semibold mb-4">Fast 30-60 second matches</p>
+        <h3 className="text-xl font-black text-white mb-2">QUICK BRAWL</h3>
+        <p className="text-white/80 font-semibold mb-4">Fast 30-60 second matches</p>
         <Button variant="game-red" size="lg" className="w-full">
           PLAY NOW
         </Button>
@@ -21,7 +21,7 @@ const GameModes = () => {
         </div>
         <h3 className="text-xl font-black text-white mb-2">TOURNAMENT</h3>
         <p className="text-white/80 font-semibold mb-4">Compete for token prizes</p>
-        <Button variant="game" size="lg" className="w-full">
+        <Button variant="game" size="lg" className="w-full text-white font-black">
           JOIN TOURNAMENT
         </Button>
       </div>

@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import lilSwipeyImg from "@/assets/lil-swipey.png";
 import dumpsterDuchessImg from "@/assets/dumpster-duchess.png";
 import captainCanImg from "@/assets/captain-can.png";
+import spaghettiSamImg from "@/assets/spaghetti-sam.png";
+import noodleFingersImg from "@/assets/noodle-fingers.png";
+import rustyPawsImg from "@/assets/rusty-paws.png";
 
 const characters = [
   {
@@ -30,21 +33,21 @@ const characters = [
   {
     id: 'spaghetti-sam',
     name: "SPAGHETTI SAM",
-    image: lilSwipeyImg, // Placeholder
+    image: spaghettiSamImg,
     color: 'green' as const,
     description: "Long-range pasta projectiles"
   },
   {
     id: 'noodle-fingers',
     name: "NOODLE FINGERS",
-    image: dumpsterDuchessImg, // Placeholder
+    image: noodleFingersImg,
     color: 'orange' as const,
     description: "Elastic grab master"
   },
   {
     id: 'rusty-paws',
     name: "RUSTY PAWS",
-    image: captainCanImg, // Placeholder
+    image: rustyPawsImg,
     color: 'purple' as const,
     description: "Plunger and toilet paper whip"
   }

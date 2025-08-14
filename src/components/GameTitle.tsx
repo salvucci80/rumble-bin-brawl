@@ -15,12 +15,12 @@ const GameTitle = () => {
   return (
     <div className="text-center mb-8">
       <h1 
-        className={`text-6xl md:text-8xl font-black text-transparent bg-gradient-to-r from-game-orange via-game-yellow to-game-orange bg-clip-text drop-shadow-lg transition-transform duration-1000 ${
+        className={`text-6xl md:text-8xl font-black text-white drop-shadow-lg transition-transform duration-1000 ${
           bounce ? 'animate-bounce' : ''
         }`}
         style={{
-          textShadow: '4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black',
-          WebkitTextStroke: '3px black'
+          textShadow: '4px 4px 0px hsl(var(--game-orange)), -4px -4px 0px hsl(var(--game-orange)), 4px -4px 0px hsl(var(--game-orange)), -4px 4px 0px hsl(var(--game-orange))',
+          WebkitTextStroke: '3px hsl(var(--game-orange))'
         }}
       >
         RUMBLE RACCOONS
