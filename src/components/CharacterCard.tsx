@@ -11,10 +11,10 @@ interface CharacterCardProps {
 
 const CharacterCard = ({ name, image, color, description, isSelected, onClick }: CharacterCardProps) => {
   const colorVariants = {
-    purple: 'from-white to-white border-purple-700',
+    purple: 'from-game-purple to-purple-500 border-purple-700',
     red: 'from-game-red to-red-500 border-red-700', 
     blue: 'from-game-blue to-blue-500 border-blue-700',
-    green: 'from-white to-white border-green-700',
+    green: 'from-game-green to-green-500 border-green-700',
     orange: 'from-game-orange to-game-yellow border-game-orange-dark'
   };
 
@@ -26,21 +26,17 @@ const CharacterCard = ({ name, image, color, description, isSelected, onClick }:
       onClick={onClick}
     >
       <div className="text-center">
-        <div className="w-32 h-32 mx-auto mb-4 rounded-xl overflow-hidden bg-black/20 flex items-center justify-center">
+        <div className="w-32 h-32 mx-auto mb-4 rounded-xl overflow-hidden flex items-center justify-center">
           <img 
             src={image} 
             alt={name}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           />
         </div>
-        <h3 className={`font-black text-lg mb-2 drop-shadow-lg ${
-          color === 'purple' || color === 'green' ? 'text-black' : 'text-white'
-        }`}>
+        <h3 className="text-white font-black text-lg mb-2 drop-shadow-lg">
           {name}
         </h3>
-        <p className={`text-sm font-semibold drop-shadow ${
-          color === 'purple' || color === 'green' ? 'text-black/80' : 'text-white/80'
-        }`}>
+        <p className="text-white/80 text-sm font-semibold drop-shadow">
           {description}
         </p>
       </div>
