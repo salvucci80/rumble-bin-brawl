@@ -22,7 +22,7 @@ const GameModes = () => {
         <h3 className="text-xl font-black text-white mb-2">TOURNAMENT</h3>
         <p className="text-white/80 font-semibold mb-4">Compete for token prizes</p>
         <Button variant="game" size="lg" className="w-full text-white font-black">
-          JOIN TOURNAMENT
+          TOURNAMENT
         </Button>
       </div>
 
